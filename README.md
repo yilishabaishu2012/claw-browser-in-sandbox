@@ -1,5 +1,7 @@
 # Browser Sandbox
 
+[中文](./README.zh.md) | English
+
 A CDP-based automation toolkit that drives a **real headed Chrome** instance inside an Xvfb virtual display. Built for sites where headless automation is detected or blocked, and where external app-launch pop-ups (e.g. `weixin://`, `taobao://`) interrupt workflows.
 
 ## Quick start

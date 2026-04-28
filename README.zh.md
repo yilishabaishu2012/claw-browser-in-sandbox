@@ -1,5 +1,7 @@
 # Browser Sandbox — 有头浏览器自动化工具箱
 
+中文 | [English](./README.md)
+
 基于 CDP（Chrome DevTools Protocol）驱动**真实有头 Chrome** 的自动化工具集。运行在 Xvfb 虚拟显示器中，专门用于那些会检测无头浏览器、或会触发"打开 App"弹窗的网站。
 
 ## 快速开始
