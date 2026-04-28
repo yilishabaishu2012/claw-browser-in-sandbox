@@ -34,12 +34,6 @@ python3 scripts/browser.py stop
 | `scripts/protocol_guard.js` | Injected script that blocks external URI schemes |
 | `scenarios/*.md` | Per-site notes and known traps |
 
-## Why not just Playwright / Selenium?
-
-- **Headless detection** — Many Chinese platforms serve different markup or trigger captchas when `navigator.webdriver` is true.
-- **App-launch pop-ups** — Sites like Xiaohongshu and Douyin try to open native apps via custom protocols. `protocol_guard.js` intercepts these before they reach the OS.
-- **Visual verification** — Because the browser is real and screenshots are taken from it, you can visually confirm every step.
-
 ## Environment variables
 
 | Variable | Default | Description |

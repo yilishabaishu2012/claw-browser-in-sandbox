@@ -34,12 +34,6 @@ python3 scripts/browser.py stop
 | `scripts/protocol_guard.js` | 注入脚本，拦截外部 URI 协议唤起 |
 | `scenarios/*.md` | 各平台经验文档与避坑指南 |
 
-## 为什么不用 Playwright / Selenium？
-
-- **无头检测** — 小红书、抖音等平台会在 `navigator.webdriver` 为 true 时返回不同页面或触发验证码。真实 Chrome 更难被检测。
-- **App 唤起弹窗** — 这些网站会尝试通过 `weixin://`、`taobao://` 等自定义协议打开 native App。`protocol_guard.js` 在页面加载前注入，拦截这些请求，避免弹窗打断自动化流程。
-- **可视化验证** — 浏览器是真实运行的，每一步都可以截图确认，肉眼可见。
-
 ## 环境变量
 
 | 变量 | 默认值 | 说明 |
